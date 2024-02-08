@@ -1,25 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-    return (
-    <div className="header">
-        <div className="logo-container">
-            <img className="logo" src="https://dynamic.brandcrowd.com/asset/logo/7f982a19-779d-4dd3-b533-7a9f66474000/logo-search-grid-1x?logoTemplateVersion=1&v=637810055012670000"></img>
-        </div>
-        <div className="nav-items">
-            <ul>
-                <li>Homee</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Cart</li>
-            </ul>
-        </div>
-    </div>
-    )
-}
-
-const resList = [
+const mockResList = [
     {
     "info": {
     "id": "179722",
@@ -548,51 +527,6 @@ const resList = [
     "type": "WEBLINK"
     }
     }
-    ]
-const RestaurantCard=(props)=>{
-    const {resData} = props;
-    const {name, cuisines, cloudinaryImageId, avgRating, costForTwo} = resData?.info;
-    const {deliveryTime} = resData?.info?.sla;
+    ];
 
-   return (
-    <div className="res-card" style={{background:"#f0f0f0"}}>
-        <img className='logo' src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}/>
-        <h3>{name}</h3>
-        <h4>{cuisines.join(",")}</h4>
-        <h4>{costForTwo}</h4>
-        <h4>{deliveryTime}</h4>
-    </div>
-   )
-}
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="search"></div>
-            <div className="res-container">
-                {
-                    resList.map((resData, index) => <RestaurantCard key={index} resData={resData}/>)
-                    
-                }
-                
-            </div>
-        </div>
-    )
-}
-const AppLayout = () => {
-    return (
-        <div className="app">
-            <Header/>
-            <Body/>
-        </div>
-    )
-}
-
-
-ReactDOM.createRoot(
-    document.getElementById("root"),
-  )
-  .render(
-    <React.StrictMode>
-      <AppLayout />
-    </React.StrictMode>,
-  );
+    export default mockResList;

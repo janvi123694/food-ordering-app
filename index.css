@@ -12,7 +12,7 @@ body,h3,h4{
 }
 
 .logo{
-    width: 300px; 
+    width: 200px; 
     max-height: 300px;
 }
 
@@ -31,7 +31,8 @@ body,h3,h4{
 }
 .res-card{
     padding: 20px;
-    width: 300px;
+    width: 200px;
+    height: 400px;
     margin: 10px;
 
 }
@@ -43,4 +44,34 @@ body,h3,h4{
 
 .search{
     padding: 10px;
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    border: 1px solid #f0f0f0;
+    height: 400px;
+    width: 200px;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+.login{
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+}
+.search > input{
+   margin: 5px;
 }

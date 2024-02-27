@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export default RestaurantCard=(props)=>{
     const {resData} = props;
+    //console.log(resData);
     const {name, cuisines, cloudinaryImageId, avgRating, costForTwo, id} = resData?.info;
     const {deliveryTime} = resData?.info?.sla;
 

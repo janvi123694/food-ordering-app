@@ -15,6 +15,7 @@ const Cart = () => {
       <div className='w-6/12 m-auto'>
         <button 
             className="bg-green-500 text-white py-1 px-3 rounded-lg my-4"
+            data-testid="clear-cart"
             onClick={handleClearCart}
         > 
             Clear Cart

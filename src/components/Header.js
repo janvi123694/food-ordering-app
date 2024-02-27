@@ -31,7 +31,7 @@ const Header = () => {
                 </li>
                 <li className="px-2 font-bold text-bold text-md"> 
                     <Link to="/cart">
-                        Cart ({cartItems.length}items)
+                        Cart({cartItems.length}items)
                     </Link>
                 </li>
                 <button 
